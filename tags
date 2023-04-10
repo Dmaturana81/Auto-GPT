@@ -1,0 +1,180 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Volumes/Users/matu/Documents/Xcode/Auto-GPT/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+AIConfig	scripts/ai_config.py	/^class AIConfig:$/;"	c
+Auto-GPT: An Autonomous GPT-4 Experiment	README.md	/^# Auto-GPT: An Autonomous GPT-4 Experiment$/;"	c
+Background	.github/PULL_REQUEST_TEMPLATE.md	/^### Background$/;"	S
+Change Safety	.github/PULL_REQUEST_TEMPLATE.md	/^### Change Safety$/;"	S
+Changes	.github/PULL_REQUEST_TEMPLATE.md	/^### Changes$/;"	S
+ChromaMemory	scripts/memory.py	/^class ChromaMemory():$/;"	c
+Config	scripts/config.py	/^class Config(metaclass=Singleton):$/;"	c
+Demo (30/03/2023):	README.md	/^### Demo (30\/03\/2023):$/;"	S	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+GPT3.5 ONLY Mode	README.md	/^## GPT3.5 ONLY Mode$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+PineconeMemory	scripts/memory.py	/^class PineconeMemory(metaclass=Singleton):$/;"	c
+SAVE_FILE	scripts/ai_config.py	/^    SAVE_FILE = os.path.join(os.path.dirname(__file__), '..', 'ai_settings.yaml')$/;"	v	class:AIConfig
+Setting up environment variables	README.md	/^### Setting up environment variables$/;"	S	section:Auto-GPT: An Autonomous GPT-4 Experiment""🌲 Pinecone API Key Setup
+Setting up environment variables	README.md	/^### Setting up environment variables$/;"	S	section:Auto-GPT: An Autonomous GPT-4 Experiment""🔍 Google API Keys Configuration
+Singleton	scripts/config.py	/^class Singleton(type):$/;"	c
+Spinner	scripts/spinner.py	/^class Spinner:$/;"	c
+TABLE_COLLECTION	scripts/memory.py	/^TABLE_COLLECTION = "auto-gpt"$/;"	v
+Table of Contents	README.md	/^## Table of Contents$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+Test Plan	.github/PULL_REQUEST_TEMPLATE.md	/^### Test Plan$/;"	S
+TestParseJson	tests/json_tests.py	/^class TestParseJson(unittest.TestCase):$/;"	c
+View Memory Usage	README.md	/^## View Memory Usage$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+__call__	scripts/config.py	/^    def __call__(cls, *args, **kwargs):$/;"	m	class:Singleton
+__enter__	scripts/spinner.py	/^    def __enter__(self):$/;"	m	class:Spinner
+__exit__	scripts/spinner.py	/^    def __exit__(self, exc_type, exc_value, exc_traceback):$/;"	m	class:Spinner
+__init__	scripts/ai_config.py	/^    def __init__(self, ai_name="", ai_role="", ai_goals=[]):$/;"	m	class:AIConfig
+__init__	scripts/config.py	/^    def __init__(self):$/;"	m	class:Config
+__init__	scripts/memory.py	/^    def __init__($/;"	m	class:ChromaMemory	typeref:typename:None
+__init__	scripts/memory.py	/^    def __init__(self):$/;"	m	class:PineconeMemory
+__init__	scripts/spinner.py	/^    def __init__(self, message="Loading...", delay=0.1):$/;"	m	class:Spinner
+_instances	scripts/config.py	/^    _instances = {}$/;"	v	class:Singleton
+add	scripts/memory.py	/^    def add(self, data):$/;"	m	class:ChromaMemory
+add	scripts/memory.py	/^    def add(self, data):$/;"	m	class:PineconeMemory
+agents	scripts/agent_manager.py	/^agents = {}  # key, (task, full_message_history, model)$/;"	v
+agents	scripts/commands.py	/^import agent_manager as agents$/;"	I	nameref:module:agent_manager
+ai	scripts/commands.py	/^import ai_functions as ai$/;"	I	nameref:module:ai_functions
+ai_name	scripts/main.py	/^ai_name = ""$/;"	v
+append_to_file	scripts/file_operations.py	/^def append_to_file(filename, text):$/;"	f
+assistant_reply	scripts/main.py	/^        assistant_reply = chat.chat_with_ai($/;"	v
+browse_website	scripts/commands.py	/^def browse_website(url, question):$/;"	f
+call_ai_function	scripts/call_ai_function.py	/^def call_ai_function(function, args, description, model=cfg.smart_llm_model):$/;"	f
+cfg	scripts/ai_functions.py	/^cfg = Config()$/;"	v
+cfg	scripts/browse.py	/^cfg = Config()$/;"	v
+cfg	scripts/call_ai_function.py	/^cfg = Config()$/;"	v
+cfg	scripts/chat.py	/^cfg = Config()$/;"	v
+cfg	scripts/commands.py	/^cfg = Config()$/;"	v
+cfg	scripts/image_gen.py	/^cfg = Config()$/;"	v
+cfg	scripts/json_parser.py	/^cfg = Config()$/;"	v
+cfg	scripts/llm_utils.py	/^cfg = Config()$/;"	v
+cfg	scripts/main.py	/^cfg = Config()$/;"	v
+cfg	scripts/memory.py	/^cfg = Config()$/;"	v
+cfg	scripts/speak.py	/^cfg = Config()$/;"	v
+chat_with_ai	scripts/chat.py	/^def chat_with_ai($/;"	f
+clear	scripts/memory.py	/^    def clear(self):$/;"	m	class:ChromaMemory
+clear	scripts/memory.py	/^    def clear(self):$/;"	m	class:PineconeMemory
+cmd	scripts/main.py	/^import commands as cmd$/;"	I	nameref:module:commands
+command_name	scripts/main.py	/^                command_name = "human_feedback"$/;"	v
+commit_memory	scripts/commands.py	/^def commit_memory(string):$/;"	f
+console_input	scripts/main.py	/^            console_input = input(Fore.MAGENTA + "Input:" + Style.RESET_ALL)$/;"	v
+construct_full_prompt	scripts/ai_config.py	/^    def construct_full_prompt(self):$/;"	m	class:AIConfig
+construct_prompt	scripts/main.py	/^def construct_prompt():$/;"	f
+count_message_tokens	scripts/token_counter.py	/^def count_message_tokens(messages : List[Dict[str, str]], model : str = "gpt-3.5-turbo-0301") ->/;"	f	typeref:typename:int
+count_string_tokens	scripts/token_counter.py	/^def count_string_tokens(string: str, model_name: str) -> int:$/;"	f	typeref:typename:int
+create_agent	scripts/agent_manager.py	/^def create_agent(task, prompt, model):$/;"	f
+create_chat_completion	scripts/llm_utils.py	/^def create_chat_completion(messages, model=None, temperature=None, max_tokens=None)->str:$/;"	f	typeref:typename:str
+create_chat_message	scripts/chat.py	/^def create_chat_message(role, content):$/;"	f
+create_message	scripts/browse.py	/^def create_message(chunk, question):$/;"	f
+delete_agent	scripts/agent_manager.py	/^def delete_agent(key):$/;"	f
+delete_agent	scripts/commands.py	/^def delete_agent(key):$/;"	f
+delete_file	scripts/file_operations.py	/^def delete_file(filename):$/;"	f
+delete_memory	scripts/commands.py	/^def delete_memory(key):$/;"	f
+eleven_labs_speech	scripts/speak.py	/^def eleven_labs_speech(text, voice_index=0):$/;"	f
+evaluate_code	scripts/ai_functions.py	/^def evaluate_code(code: str) -> List[str]:$/;"	f	typeref:typename:List[str]
+execute_command	scripts/commands.py	/^def execute_command(command_name, arguments):$/;"	f
+execute_python_file	scripts/execute_code.py	/^def execute_python_file(file):$/;"	f
+extract_hyperlinks	scripts/browse.py	/^def extract_hyperlinks(soup):$/;"	f
+fix_and_parse_json	scripts/json_parser.py	/^def fix_and_parse_json(json_str: str, try_to_fix_with_gpt: bool = True):$/;"	f
+fix_json	scripts/json_parser.py	/^def fix_json(json_str: str, schema: str, debug=False) -> str:$/;"	f	typeref:typename:str
+format_hyperlinks	scripts/browse.py	/^def format_hyperlinks(hyperlinks):$/;"	f
+full_message_history	scripts/main.py	/^full_message_history = []$/;"	v
+generate_context	scripts/chat.py	/^def generate_context(prompt, relevant_memory, full_message_history, model):$/;"	f
+generate_image	scripts/image_gen.py	/^def generate_image(prompt):$/;"	f
+get	scripts/memory.py	/^    def get(self, data):$/;"	m	class:ChromaMemory
+get	scripts/memory.py	/^    def get(self, data):$/;"	m	class:PineconeMemory
+get_ada_embedding	scripts/memory.py	/^def get_ada_embedding(text):$/;"	f
+get_command	scripts/commands.py	/^def get_command(response):$/;"	f
+get_datetime	scripts/commands.py	/^def get_datetime():$/;"	f
+get_hyperlinks	scripts/commands.py	/^def get_hyperlinks(url):$/;"	f
+get_relevant	scripts/memory.py	/^    def get_relevant(self, data, num_relevant=5):$/;"	m	class:ChromaMemory
+get_relevant	scripts/memory.py	/^    def get_relevant(self, data, num_relevant=5):$/;"	m	class:PineconeMemory
+get_stats	scripts/memory.py	/^    def get_stats(self):$/;"	m	class:ChromaMemory
+get_stats	scripts/memory.py	/^    def get_stats(self):$/;"	m	class:PineconeMemory
+get_text_from_embedding	scripts/memory.py	/^def get_text_from_embedding(embedding):$/;"	f
+get_text_summary	scripts/commands.py	/^def get_text_summary(url, question):$/;"	f
+google_official_search	scripts/commands.py	/^def google_official_search(query, num_results=8):$/;"	f
+google_search	scripts/commands.py	/^def google_search(query, num_results=8):$/;"	f
+gtts_speech	scripts/speak.py	/^def gtts_speech(text):$/;"	f
+improve_code	scripts/ai_functions.py	/^def improve_code(suggestions: List[str], code: str) -> str:$/;"	f	typeref:typename:str
+is_valid_int	scripts/commands.py	/^def is_valid_int(value):$/;"	f
+list_agents	scripts/agent_manager.py	/^def list_agents():$/;"	f
+list_agents	scripts/commands.py	/^def list_agents():$/;"	f
+load	scripts/ai_config.py	/^    def load(cls, config_file=SAVE_FILE):$/;"	m	class:AIConfig
+load_prompt	scripts/data.py	/^def load_prompt():$/;"	f
+load_variables	scripts/main.py	/^def load_variables(config_file="config.yaml"):$/;"	f
+memory	scripts/main.py	/^memory = ChromaMemory()$/;"	v
+memory_to_add	scripts/main.py	/^    memory_to_add = f"Assistant Reply: {assistant_reply} " \\$/;"	v
+message_agent	scripts/agent_manager.py	/^def message_agent(key, message):$/;"	f
+message_agent	scripts/commands.py	/^def message_agent(key, message):$/;"	f
+next_action_count	scripts/main.py	/^next_action_count = 0$/;"	v
+next_key	scripts/agent_manager.py	/^next_key = 0$/;"	v
+overwrite_memory	scripts/commands.py	/^def overwrite_memory(key, string):$/;"	f
+parse_arguments	scripts/main.py	/^def parse_arguments():$/;"	f
+print_assistant_thoughts	scripts/main.py	/^def print_assistant_thoughts(assistant_reply):$/;"	f
+print_to_console	scripts/main.py	/^def print_to_console($/;"	f
+prompt	scripts/main.py	/^prompt = construct_prompt()$/;"	v
+prompt_user	scripts/main.py	/^def prompt_user():$/;"	f
+read_file	scripts/file_operations.py	/^def read_file(filename):$/;"	f
+result	scripts/main.py	/^        result = f"Command {command_name} threw the following error: " + arguments$/;"	v
+result	scripts/main.py	/^        result = f"Human feedback: {user_input}"$/;"	v
+result	scripts/main.py	/^result = None$/;"	v
+safe_join	scripts/file_operations.py	/^def safe_join(base, *paths):$/;"	f
+save	scripts/ai_config.py	/^    def save(self, config_file=SAVE_FILE):$/;"	m	class:AIConfig
+say_text	scripts/speak.py	/^def say_text(text, voice_index=0):$/;"	f
+scrape_links	scripts/browse.py	/^def scrape_links(url):$/;"	f
+scrape_text	scripts/browse.py	/^def scrape_text(url):$/;"	f
+search_files	scripts/file_operations.py	/^def search_files(directory):$/;"	f
+set_continuous_mode	scripts/config.py	/^    def set_continuous_mode(self, value: bool):$/;"	m	class:Config
+set_custom_search_engine_id	scripts/config.py	/^    def set_custom_search_engine_id(self, value: str):$/;"	m	class:Config
+set_elevenlabs_api_key	scripts/config.py	/^    def set_elevenlabs_api_key(self, value: str):$/;"	m	class:Config
+set_fast_llm_model	scripts/config.py	/^    def set_fast_llm_model(self, value: str):$/;"	m	class:Config
+set_fast_token_limit	scripts/config.py	/^    def set_fast_token_limit(self, value: int):$/;"	m	class:Config
+set_google_api_key	scripts/config.py	/^    def set_google_api_key(self, value: str):$/;"	m	class:Config
+set_openai_api_key	scripts/config.py	/^    def set_openai_api_key(self, value: str):$/;"	m	class:Config
+set_pinecone_api_key	scripts/config.py	/^    def set_pinecone_api_key(self, value: str):$/;"	m	class:Config
+set_pinecone_region	scripts/config.py	/^    def set_pinecone_region(self, value: str):$/;"	m	class:Config
+set_smart_llm_model	scripts/config.py	/^    def set_smart_llm_model(self, value: str):$/;"	m	class:Config
+set_smart_token_limit	scripts/config.py	/^    def set_smart_token_limit(self, value: int):$/;"	m	class:Config
+set_speak_mode	scripts/config.py	/^    def set_speak_mode(self, value: bool):$/;"	m	class:Config
+shutdown	scripts/commands.py	/^def shutdown():$/;"	f
+spin	scripts/spinner.py	/^    def spin(self):$/;"	m	class:Spinner
+split_text	scripts/browse.py	/^def split_text(text, max_length=8192):$/;"	f
+start_agent	scripts/commands.py	/^def start_agent(name, task, prompt, model=cfg.fast_llm_model):$/;"	f
+summarize_text	scripts/browse.py	/^def summarize_text(text, question):$/;"	f
+test_invalid_json_leading_sentence_with_gpt	tests/json_tests.py	/^    def test_invalid_json_leading_sentence_with_gpt(self):$/;"	m	class:TestParseJson
+test_invalid_json_major_with_gpt	tests/json_tests.py	/^    def test_invalid_json_major_with_gpt(self):$/;"	m	class:TestParseJson
+test_invalid_json_major_without_gpt	tests/json_tests.py	/^    def test_invalid_json_major_without_gpt(self):$/;"	m	class:TestParseJson
+test_invalid_json_minor	tests/json_tests.py	/^    def test_invalid_json_minor(self):$/;"	m	class:TestParseJson
+test_valid_json	tests/json_tests.py	/^    def test_valid_json(self):$/;"	m	class:TestParseJson
+tts_headers	scripts/speak.py	/^tts_headers = {$/;"	v
+user_input	scripts/main.py	/^                    user_input = "GENERATE NEXT COMMAND JSON"$/;"	v
+user_input	scripts/main.py	/^                user_input = "EXIT"$/;"	v
+user_input	scripts/main.py	/^                user_input = "GENERATE NEXT COMMAND JSON"$/;"	v
+user_input	scripts/main.py	/^        user_input = ""$/;"	v
+user_input	scripts/main.py	/^user_input = "Determine which next command to use, and respond using the format specified above:/;"	v
+voices	scripts/speak.py	/^voices = ["ErXwobaYiN019PkySvjV", "EXAVITQu4vr4xnSDxMaL"]$/;"	v
+working_directory	scripts/file_operations.py	/^working_directory = "auto_gpt_workspace"$/;"	v
+working_directory	scripts/image_gen.py	/^working_directory = "auto_gpt_workspace"$/;"	v
+write_tests	scripts/ai_functions.py	/^def write_tests(code: str, focus: List[str]) -> str:$/;"	f	typeref:typename:str
+write_to_file	scripts/file_operations.py	/^def write_to_file(filename, text):$/;"	f
+⚠️ Limitations	README.md	/^## ⚠️ Limitations$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🌲 Pinecone API Key Setup	README.md	/^## 🌲 Pinecone API Key Setup$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🐦 Connect with Us on Twitter	README.md	/^## 🐦 Connect with Us on Twitter $/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+💀 Continuous Mode ⚠️	README.md	/^## 💀 Continuous Mode ⚠️$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+💾 Installation	README.md	/^## 💾 Installation$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+📋 Requirements	README.md	/^## 📋 Requirements$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🔍 Google API Keys Configuration	README.md	/^## 🔍 Google API Keys Configuration$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🔧 Usage	README.md	/^## 🔧 Usage$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🖼 Image Generation	README.md	/^## 🖼 Image Generation$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🗣️ Speech Mode	README.md	/^## 🗣️ Speech Mode$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🚀 Features	README.md	/^## 🚀 Features$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment
+🛡 Disclaimer	README.md	/^## 🛡 Disclaimer$/;"	s	chapter:Auto-GPT: An Autonomous GPT-4 Experiment

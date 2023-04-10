@@ -2,7 +2,7 @@ import os
 import openai
 from dotenv import load_dotenv
 # Load environment variables from .env file
-load_dotenv()
+load_dotenv('.env')
 
 
 class Singleton(type):
@@ -36,7 +36,7 @@ class Config(metaclass=Singleton):
         
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.use_azure = False
-        self.use_azure = os.getenv("USE_AZURE") == 'True'
+        # self.use_azure = os.getenv("USE_AZURE") == 'True'
         if self.use_azure:
             self.openai_api_base = os.getenv("OPENAI_API_BASE")
             self.openai_api_version = os.getenv("OPENAI_API_VERSION")

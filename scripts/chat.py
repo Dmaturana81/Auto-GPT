@@ -44,7 +44,7 @@ def chat_with_ai(
         full_message_history,
         permanent_memory,
         token_limit,
-        debug=False):
+        debug=True):
     while True:
         try:
             """
@@ -65,9 +65,8 @@ def chat_with_ai(
             if debug:
                 print(f"Token limit: {token_limit}")
             send_token_limit = token_limit - 1000
-
+            # print(str(full_message_history[-5:]))
             relevant_memory = permanent_memory.get_relevant(str(full_message_history[-5:]), 10)
-
             if debug:
                 print('Memory Stats: ', permanent_memory.get_stats())
 
